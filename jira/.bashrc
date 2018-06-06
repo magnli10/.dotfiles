@@ -1,3 +1,4 @@
+# Open a bob feature git branch in jira using chrome
 function jiratask {
     JIRAID=$(git branch | grep \* | sed -n 's/.*\([0-9][0-9][0-9][0-9][0-9][0-9]*\).*/\1/p')
     

@@ -9,7 +9,8 @@ function gsb {
        return 0;
    fi;
 
-   printf '\e[1;32m%-6s\e[m'  "Toggle between last modified git branches."; 
+   printf '\e[1;32m%-6s\e[m'  "Toggle between last modified git branches.";
+   printf '\nExit : Ctrl + c' 
    printf "\nUsage: gsb [branchname]\n\n";
    BRANCHES=$(git branch --sort=committerdate | tail -5 | awk '{print $NF}');
 
